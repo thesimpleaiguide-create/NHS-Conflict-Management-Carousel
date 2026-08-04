@@ -163,13 +163,13 @@
         }
     </style>
 </head>
-<body class="p-2 sm:p-4 min-h-screen flex items-center justify-center bg-slate-100">
+<body class="p-0 m-0 w-full min-h-screen bg-transparent antialiased flex flex-col justify-center">
 
-    <div class="w-full max-w-5xl bg-white rounded-ttn-card shadow-ttn-main border border-ttn-ice overflow-hidden flex flex-col my-auto">
+    <!-- Full-bleed container to eliminate dead space and blend with Mindsmith canvas -->
+    <div class="w-full bg-white border border-ttn-ice rounded-lg shadow-sm overflow-hidden flex flex-col my-auto">
         
         <!-- Step Indicator Header -->
-        <div class="bg-slate-100 border-b border-ttn-ice flex flex-wrap text-xs md:text-sm font-heading font-semibold">
-            <button onclick="goToSlide(0)" class="step-pill active flex-1 min-w-[120px] py-2.5 px-3 text-center text-ttn-slate hover:text-ttn-blue">
+        <div class="bg-slate-50 border-b border-ttn-ice flex flex-wrap text-xs md:text-sm font-heading font-semibold">
                 1. Behaviours Overlap
             </button>
             <button onclick="goToSlide(1)" class="step-pill flex-1 min-w-[120px] py-2.5 px-3 text-center text-ttn-slate hover:text-ttn-blue">
@@ -381,78 +381,78 @@
                 </div>
 
                 <!-- SLIDE 4: A WORKED EXAMPLE -->
-                <div class="carousel-slide p-4 md:p-5 space-y-3 md:space-y-4">
-                    
-                    <div>
-                        <h2 class="font-heading font-bold text-base text-ttn-navy mb-0.5">Worked Example: Mrs Patel Scenario</h2>
-                        <p class="text-xs text-slate-600">
-                            Mrs Patel arrives at the desk without an appointment. She is well-dressed, confident and speaks with authority.
-                        </p>
+        <div class="carousel-slide p-3 sm:p-4 md:p-5 space-y-3 md:space-y-4">
+            
+            <div>
+                <h2 class="font-heading font-bold text-sm sm:text-base text-ttn-navy mb-0.5">Worked Example: Mrs Patel Scenario</h2>
+                <p class="text-xs text-slate-600">
+                    Mrs Patel arrives at the desk without an appointment. She is well-dressed, confident and speaks with authority.
+                </p>
+            </div>
+
+            <!-- Timeline Dialogue Cards -->
+            <div class="space-y-2">
+                
+                <!-- Dialogue 1 -->
+                <div class="ttn-card p-2.5 sm:p-3 border-l-4 border-amber-400">
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-[10px] font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded uppercase">1. Entitlement First</span>
+                        <span class="text-[10px] text-slate-400 font-mono">00:00 - Arrival</span>
                     </div>
-
-                    <!-- Timeline Dialogue Cards -->
-                    <div class="space-y-2.5">
-                        
-                        <!-- Dialogue 1 -->
-                        <div class="ttn-card p-3 border-l-4 border-amber-400">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="text-[10px] font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded uppercase">1. Entitlement First</span>
-                                <span class="text-[10px] text-slate-400 font-mono">00:00 - Arrival</span>
-                            </div>
-                            <blockquote class="text-xs sm:text-sm font-semibold text-slate-800 italic mb-1">
-                                "I need to see Dr Andrews today. I have been a patient here for fifteen years and I always see him."
-                            </blockquote>
-                            <div class="text-[11px] text-slate-500 bg-slate-50 p-1.5 rounded">
-                                <strong>Clinic Action:</strong> Reception polite and firm: explains Dr Andrews is fully booked for today.
-                            </div>
-                        </div>
-
-                        <!-- Dialogue 2 -->
-                        <div class="ttn-card p-3 border-l-4 border-ttn-orange">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="text-[10px] font-bold text-ttn-orange bg-orange-50 px-2 py-0.5 rounded uppercase">2. Demanding Behaviour Second</span>
-                                <span class="text-[10px] text-slate-400 font-mono">00:45 - Tone Shift</span>
-                            </div>
-                            <blockquote class="text-xs sm:text-sm font-semibold text-slate-800 italic mb-1">
-                                "This is completely unacceptable. I need to be seen today. I do not care about your system."
-                            </blockquote>
-                            <div class="text-[11px] text-slate-500 bg-slate-50 p-1.5 rounded">
-                                <strong>Clinic Action:</strong> Reception holds boundary: offers an alternative appointment with a different GP.
-                            </div>
-                        </div>
-
-                        <!-- Dialogue 3 -->
-                        <div class="ttn-card p-3 border-l-4 border-purple-500">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="text-[10px] font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded uppercase">3. Manipulation Third</span>
-                                <span class="text-[10px] text-slate-400 font-mono">01:30 - Final Pivot</span>
-                            </div>
-                            <blockquote class="text-xs sm:text-sm font-semibold text-slate-800 italic mb-1">
-                                "I think you should know that my husband is on the Patient Participation Group. I would hate for this to become something more formal."
-                            </blockquote>
-                            <div class="text-[11px] text-slate-500 bg-slate-50 p-1.5 rounded">
-                                <strong>Clinic Action:</strong> Mrs Patel leans forward, attempting to induce fear of formal reprimand.
-                            </div>
-                        </div>
-
+                    <blockquote class="text-xs sm:text-sm font-semibold text-slate-800 italic mb-1">
+                        "I need to see Dr Andrews today. I have been a patient here for fifteen years and I always see him."
+                    </blockquote>
+                    <div class="text-[11px] text-slate-500 bg-slate-50 p-1.5 rounded">
+                        <strong>Clinic Action:</strong> Reception polite and firm: explains Dr Andrews is fully booked for today.
                     </div>
+                </div>
 
-                    <!-- Scenario Summary Box -->
-                    <div class="bg-ttn-navy text-white p-3.5 rounded-ttn-card shadow-ttn-main text-center space-y-1">
-                        <span class="inline-block bg-ttn-cyan text-ttn-navy font-heading font-extrabold text-[10px] px-2.5 py-0.5 rounded-full uppercase">
-                            Scenario Breakdown
-                        </span>
-                        <p class="text-xs sm:text-sm font-medium text-slate-100 max-w-xl mx-auto">
-                            Within two minutes, all three MDE behaviours have appeared. <strong class="text-ttn-cyan">Entitlement first. Demanding behaviour second. Manipulation third.</strong>
-                        </p>
+                <!-- Dialogue 2 -->
+                <div class="ttn-card p-2.5 sm:p-3 border-l-4 border-ttn-orange">
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-[10px] font-bold text-ttn-orange bg-orange-50 px-2 py-0.5 rounded uppercase">2. Demanding Behaviour Second</span>
+                        <span class="text-[10px] text-slate-400 font-mono">00:45 - Tone Shift</span>
                     </div>
+                    <blockquote class="text-xs sm:text-sm font-semibold text-slate-800 italic mb-1">
+                        "This is completely unacceptable. I need to be seen today. I do not care about your system."
+                    </blockquote>
+                    <div class="text-[11px] text-slate-500 bg-slate-50 p-1.5 rounded">
+                        <strong>Clinic Action:</strong> Reception holds boundary: offers an alternative appointment with a different GP.
+                    </div>
+                </div>
 
+                <!-- Dialogue 3 -->
+                <div class="ttn-card p-2.5 sm:p-3 border-l-4 border-purple-500">
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-[10px] font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded uppercase">3. Manipulation Third</span>
+                        <span class="text-[10px] text-slate-400 font-mono">01:30 - Final Pivot</span>
+                    </div>
+                    <blockquote class="text-xs sm:text-sm font-semibold text-slate-800 italic mb-1">
+                        "I think you should know that my husband is on the Patient Participation Group. I would hate for this to become something more formal."
+                    </blockquote>
+                    <div class="text-[11px] text-slate-500 bg-slate-50 p-1.5 rounded">
+                        <strong>Clinic Action:</strong> Mrs Patel leans forward, attempting to induce fear of formal reprimand.
+                    </div>
                 </div>
 
             </div>
+
+            <!-- Scenario Summary Box -->
+            <div class="bg-ttn-navy text-white p-3 rounded-ttn-card shadow-ttn-main text-center space-y-1">
+                <span class="inline-block bg-ttn-cyan text-ttn-navy font-heading font-extrabold text-[10px] px-2.5 py-0.5 rounded-full uppercase">
+                    Scenario Breakdown
+                </span>
+                <p class="text-xs sm:text-sm font-medium text-slate-100 max-w-xl mx-auto leading-tight">
+                    Within two minutes, all three MDE behaviours have appeared. <strong class="text-ttn-cyan">Entitlement first. Demanding behaviour second. Manipulation third.</strong>
+                </p>
+            </div>
+
         </div>
 
-        <!-- Carousel Control Bar -->
+        </div>
+    </div>
+
+    <!-- Carousel Control Bar -->
         <div class="bg-slate-50 border-t border-ttn-ice px-4 py-2.5 flex flex-row justify-between items-center gap-3">
             
             <button id="prev-btn" onclick="prevSlide()" class="ttn-cta-ghost px-4 py-2 text-xs uppercase tracking-wider">
