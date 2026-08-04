@@ -163,22 +163,23 @@
         }
     </style>
 </head>
-<body class="p-0 m-0 w-full min-h-screen bg-transparent antialiased flex flex-col justify-center">
+<body class="p-2 sm:p-4 m-0 w-full min-h-screen bg-transparent antialiased flex flex-col justify-center items-center">
 
-    <!-- Full-bleed container to eliminate dead space and blend with Mindsmith canvas -->
-    <div class="w-full bg-white border border-ttn-ice rounded-lg shadow-sm overflow-hidden flex flex-col my-auto">
+    <!-- Centered, max-width constrained container to prevent wide-screen stretching -->
+    <div class="w-full max-w-4xl bg-white border border-ttn-ice rounded-lg shadow-sm overflow-hidden flex flex-col my-auto">
         
         <!-- Step Indicator Header -->
-        <div class="bg-slate-50 border-b border-ttn-ice flex flex-wrap text-xs md:text-sm font-heading font-semibold">
+        <div class="bg-slate-50 border-b border-ttn-ice grid grid-cols-2 md:grid-cols-4 text-xs md:text-sm font-heading font-semibold">
+            <button onclick="goToSlide(0)" class="step-pill active py-2.5 px-3 text-center text-ttn-slate hover:text-ttn-blue truncate">
                 1. Behaviours Overlap
             </button>
-            <button onclick="goToSlide(1)" class="step-pill flex-1 min-w-[120px] py-2.5 px-3 text-center text-ttn-slate hover:text-ttn-blue">
+            <button onclick="goToSlide(1)" class="step-pill py-2.5 px-3 text-center text-ttn-slate hover:text-ttn-blue truncate">
                 2. Behaviours Escalate
             </button>
-            <button onclick="goToSlide(2)" class="step-pill flex-1 min-w-[120px] py-2.5 px-3 text-center text-ttn-slate hover:text-ttn-blue">
+            <button onclick="goToSlide(2)" class="step-pill py-2.5 px-3 text-center text-ttn-slate hover:text-ttn-blue truncate">
                 3. What MDE Is Not
             </button>
-            <button onclick="goToSlide(3)" class="step-pill flex-1 min-w-[120px] py-2.5 px-3 text-center text-ttn-slate hover:text-ttn-blue">
+            <button onclick="goToSlide(3)" class="step-pill py-2.5 px-3 text-center text-ttn-slate hover:text-ttn-blue truncate">
                 4. Worked Example
             </button>
         </div>
@@ -199,36 +200,42 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
                         
                         <!-- Entitlement Card -->
-                        <div class="ttn-card p-3.5">
-                            <span class="inline-block bg-ttn-ice text-ttn-blue text-[10px] font-bold px-2 py-0.5 rounded-full mb-1">Phase 1</span>
-                            <h3 class="font-bold text-sm text-ttn-navy mb-1">Entitlement</h3>
-                            <blockquote class="text-[11px] text-slate-600 italic bg-slate-50 p-2 rounded border-l-2 border-amber-400 mb-2">
-                                "I have been coming here for twenty years..."
-                            </blockquote>
+                        <div class="ttn-card p-3.5 flex flex-col justify-between">
+                            <div>
+                                <span class="inline-block bg-ttn-ice text-ttn-blue text-[10px] font-bold px-2 py-0.5 rounded-full mb-1">Phase 1</span>
+                                <h3 class="font-bold text-sm text-ttn-navy mb-1">Entitlement</h3>
+                                <blockquote class="text-[11px] text-slate-600 italic bg-slate-50 p-2 rounded border-l-2 border-amber-400 mb-2">
+                                    "I have been coming here for twenty years..."
+                                </blockquote>
+                            </div>
                             <p class="text-[11px] text-slate-600 leading-snug">
                                 Leverages personal status or clinic longevity to demand exceptions to normal protocols.
                             </p>
                         </div>
 
                         <!-- Demanding Card -->
-                        <div class="ttn-card p-3.5">
-                            <span class="inline-block bg-ttn-ice text-ttn-blue text-[10px] font-bold px-2 py-0.5 rounded-full mb-1">Phase 2</span>
-                            <h3 class="font-bold text-sm text-ttn-navy mb-1">Demanding Behaviour</h3>
-                            <blockquote class="text-[11px] text-slate-600 italic bg-slate-50 p-2 rounded border-l-2 border-ttn-orange mb-2">
-                                "I need to be seen today, I do not care how full you are..."
-                            </blockquote>
+                        <div class="ttn-card p-3.5 flex flex-col justify-between">
+                            <div>
+                                <span class="inline-block bg-ttn-ice text-ttn-blue text-[10px] font-bold px-2 py-0.5 rounded-full mb-1">Phase 2</span>
+                                <h3 class="font-bold text-sm text-ttn-navy mb-1">Demanding Behaviour</h3>
+                                <blockquote class="text-[11px] text-slate-600 italic bg-slate-50 p-2 rounded border-l-2 border-ttn-orange mb-2">
+                                    "I need to be seen today, I do not care how full you are..."
+                                </blockquote>
+                            </div>
                             <p class="text-[11px] text-slate-600 leading-snug">
                                 Insists on immediate compliance, overriding capacity constraints or clinical triage criteria.
                             </p>
                         </div>
 
                         <!-- Manipulation Card -->
-                        <div class="ttn-card p-3.5">
-                            <span class="inline-block bg-ttn-ice text-ttn-blue text-[10px] font-bold px-2 py-0.5 rounded-full mb-1">Phase 3</span>
-                            <h3 class="font-bold text-sm text-ttn-navy mb-1">Manipulation</h3>
-                            <blockquote class="text-[11px] text-slate-600 italic bg-slate-50 p-2 rounded border-l-2 border-purple-400 mb-2">
-                                "I will be making a formal complaint and I know exactly who to speak to..."
-                            </blockquote>
+                        <div class="ttn-card p-3.5 flex flex-col justify-between">
+                            <div>
+                                <span class="inline-block bg-ttn-ice text-ttn-blue text-[10px] font-bold px-2 py-0.5 rounded-full mb-1">Phase 3</span>
+                                <h3 class="font-bold text-sm text-ttn-navy mb-1">Manipulation</h3>
+                                <blockquote class="text-[11px] text-slate-600 italic bg-slate-50 p-2 rounded border-l-2 border-purple-400 mb-2">
+                                    "I will be making a formal complaint and I know exactly who to speak to..."
+                                </blockquote>
+                            </div>
                             <p class="text-[11px] text-slate-600 leading-snug">
                                 Applies emotional leverage, threats of escalation, or name dropping to force compliance.
                             </p>
@@ -452,7 +459,7 @@
         </div>
     </div>
 
-    <!-- Carousel Control Bar -->
+        <!-- Carousel Control Bar -->
         <div class="bg-slate-50 border-t border-ttn-ice px-4 py-2.5 flex flex-row justify-between items-center gap-3">
             
             <button id="prev-btn" onclick="prevSlide()" class="ttn-cta-ghost px-4 py-2 text-xs uppercase tracking-wider">
