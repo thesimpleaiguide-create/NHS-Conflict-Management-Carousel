@@ -163,22 +163,22 @@
         }
     </style>
 </head>
-<body class="p-3 md:p-8 min-h-screen">
+<body class="p-2 sm:p-4 min-h-screen flex items-center justify-center bg-slate-100">
 
-    <div class="max-w-5xl mx-auto bg-white rounded-ttn-card shadow-ttn-main border border-ttn-ice overflow-hidden">
+    <div class="w-full max-w-5xl bg-white rounded-ttn-card shadow-ttn-main border border-ttn-ice overflow-hidden flex flex-col my-auto">
         
         <!-- Step Indicator Header -->
-        <div class="bg-slate-100 border-b border-ttn-ice flex flex-wrap text-sm font-heading font-semibold">
-            <button onclick="goToSlide(0)" class="step-pill active flex-1 min-w-[140px] py-3.5 px-4 text-center text-ttn-slate hover:text-ttn-blue">
+        <div class="bg-slate-100 border-b border-ttn-ice flex flex-wrap text-xs md:text-sm font-heading font-semibold">
+            <button onclick="goToSlide(0)" class="step-pill active flex-1 min-w-[120px] py-2.5 px-3 text-center text-ttn-slate hover:text-ttn-blue">
                 1. Behaviours Overlap
             </button>
-            <button onclick="goToSlide(1)" class="step-pill flex-1 min-w-[140px] py-3.5 px-4 text-center text-ttn-slate hover:text-ttn-blue">
+            <button onclick="goToSlide(1)" class="step-pill flex-1 min-w-[120px] py-2.5 px-3 text-center text-ttn-slate hover:text-ttn-blue">
                 2. Behaviours Escalate
             </button>
-            <button onclick="goToSlide(2)" class="step-pill flex-1 min-w-[140px] py-3.5 px-4 text-center text-ttn-slate hover:text-ttn-blue">
+            <button onclick="goToSlide(2)" class="step-pill flex-1 min-w-[120px] py-2.5 px-3 text-center text-ttn-slate hover:text-ttn-blue">
                 3. What MDE Is Not
             </button>
-            <button onclick="goToSlide(3)" class="step-pill flex-1 min-w-[140px] py-3.5 px-4 text-center text-ttn-slate hover:text-ttn-blue">
+            <button onclick="goToSlide(3)" class="step-pill flex-1 min-w-[120px] py-2.5 px-3 text-center text-ttn-slate hover:text-ttn-blue">
                 4. Worked Example
             </button>
         </div>
@@ -188,48 +188,48 @@
             <div class="carousel-track" id="carousel-track">
                 
                 <!-- SLIDE 1: WHEN MDE BEHAVIOURS OVERLAP -->
-                <div class="carousel-slide p-6 md:p-8 space-y-6">
+                <div class="carousel-slide p-4 md:p-5 space-y-3 md:space-y-4">
                     
-                    <div class="bg-ttn-ice/50 border-l-4 border-ttn-blue p-4 rounded-r-ttn-sm">
-                        <p class="text-ttn-slate text-base md:text-lg font-medium leading-relaxed">
+                    <div class="bg-ttn-ice/50 border-l-4 border-ttn-blue p-2.5 sm:p-3 rounded-r-ttn-sm">
+                        <p class="text-ttn-slate text-xs sm:text-sm font-medium leading-normal">
                             MDE behaviours do not always appear in <strong class="text-ttn-navy font-bold">isolation</strong>. A single interaction can move through <strong class="text-ttn-blue font-bold">all three</strong>.
                         </p>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
                         
                         <!-- Entitlement Card -->
-                        <div class="ttn-card p-6">
-                            <span class="inline-block bg-ttn-ice text-ttn-blue text-xs font-bold px-2.5 py-0.5 rounded-full mb-2">Phase 1</span>
-                            <h3 class="font-bold text-lg text-ttn-navy mb-2">Entitlement</h3>
-                            <blockquote class="text-xs md:text-sm text-slate-600 italic bg-slate-50 p-3 rounded border-l-2 border-amber-400 mb-3">
+                        <div class="ttn-card p-3.5">
+                            <span class="inline-block bg-ttn-ice text-ttn-blue text-[10px] font-bold px-2 py-0.5 rounded-full mb-1">Phase 1</span>
+                            <h3 class="font-bold text-sm text-ttn-navy mb-1">Entitlement</h3>
+                            <blockquote class="text-[11px] text-slate-600 italic bg-slate-50 p-2 rounded border-l-2 border-amber-400 mb-2">
                                 "I have been coming here for twenty years..."
                             </blockquote>
-                            <p class="text-xs text-slate-600 leading-relaxed">
+                            <p class="text-[11px] text-slate-600 leading-snug">
                                 Leverages personal status or clinic longevity to demand exceptions to normal protocols.
                             </p>
                         </div>
 
                         <!-- Demanding Card -->
-                        <div class="ttn-card p-6">
-                            <span class="inline-block bg-ttn-ice text-ttn-blue text-xs font-bold px-2.5 py-0.5 rounded-full mb-2">Phase 2</span>
-                            <h3 class="font-bold text-lg text-ttn-navy mb-2">Demanding Behaviour</h3>
-                            <blockquote class="text-xs md:text-sm text-slate-600 italic bg-slate-50 p-3 rounded border-l-2 border-ttn-orange mb-3">
+                        <div class="ttn-card p-3.5">
+                            <span class="inline-block bg-ttn-ice text-ttn-blue text-[10px] font-bold px-2 py-0.5 rounded-full mb-1">Phase 2</span>
+                            <h3 class="font-bold text-sm text-ttn-navy mb-1">Demanding Behaviour</h3>
+                            <blockquote class="text-[11px] text-slate-600 italic bg-slate-50 p-2 rounded border-l-2 border-ttn-orange mb-2">
                                 "I need to be seen today, I do not care how full you are..."
                             </blockquote>
-                            <p class="text-xs text-slate-600 leading-relaxed">
+                            <p class="text-[11px] text-slate-600 leading-snug">
                                 Insists on immediate compliance, overriding capacity constraints or clinical triage criteria.
                             </p>
                         </div>
 
                         <!-- Manipulation Card -->
-                        <div class="ttn-card p-6">
-                            <span class="inline-block bg-ttn-ice text-ttn-blue text-xs font-bold px-2.5 py-0.5 rounded-full mb-2">Phase 3</span>
-                            <h3 class="font-bold text-lg text-ttn-navy mb-2">Manipulation</h3>
-                            <blockquote class="text-xs md:text-sm text-slate-600 italic bg-slate-50 p-3 rounded border-l-2 border-purple-400 mb-3">
+                        <div class="ttn-card p-3.5">
+                            <span class="inline-block bg-ttn-ice text-ttn-blue text-[10px] font-bold px-2 py-0.5 rounded-full mb-1">Phase 3</span>
+                            <h3 class="font-bold text-sm text-ttn-navy mb-1">Manipulation</h3>
+                            <blockquote class="text-[11px] text-slate-600 italic bg-slate-50 p-2 rounded border-l-2 border-purple-400 mb-2">
                                 "I will be making a formal complaint and I know exactly who to speak to..."
                             </blockquote>
-                            <p class="text-xs text-slate-600 leading-relaxed">
+                            <p class="text-[11px] text-slate-600 leading-snug">
                                 Applies emotional leverage, threats of escalation, or name dropping to force compliance.
                             </p>
                         </div>
@@ -237,14 +237,14 @@
                     </div>
 
                     <!-- Callout Box -->
-                    <div class="bg-ttn-navy text-white p-5 rounded-ttn-card shadow-ttn-main space-y-2">
-                        <div class="text-ttn-cyan font-heading font-bold text-base">
+                    <div class="bg-ttn-navy text-white p-3.5 rounded-ttn-card shadow-ttn-main space-y-1">
+                        <div class="text-ttn-cyan font-heading font-bold text-xs uppercase tracking-wide">
                             Key Strategic Takeaway
                         </div>
-                        <p class="text-sm text-slate-200 leading-relaxed">
+                        <p class="text-xs text-slate-200 leading-relaxed">
                             The shift is rarely <strong class="text-white font-semibold">random</strong>. When one approach <strong class="text-ttn-cyan">stops working</strong>, the patient moves to <strong class="text-ttn-cyan">another</strong>. Each escalation is an <strong class="text-white font-semibold">attempt to find the tactic that will finally get them what they need</strong>.
                         </p>
-                        <div class="pt-2 text-xs font-semibold text-ttn-cyan tracking-wide uppercase border-t border-white/10">
+                        <div class="pt-1 text-[11px] font-semibold text-ttn-cyan tracking-wider uppercase border-t border-white/10">
                             Understanding that makes the pattern predictable. And predictable is manageable.
                         </div>
                     </div>
@@ -252,64 +252,64 @@
                 </div>
 
                 <!-- SLIDE 2: WHEN MDE BEHAVIOURS ESCALATE -->
-                <div class="carousel-slide p-6 md:p-8 space-y-6">
+                <div class="carousel-slide p-4 md:p-5 space-y-3 md:space-y-4">
                     
-                    <div class="bg-ttn-ice/40 p-4 rounded-ttn-card border-l-4 border-ttn-orange">
-                        <h2 class="font-heading font-bold text-lg text-ttn-navy mb-1">When MDE Behaviours Escalate</h2>
-                        <p class="text-sm text-slate-700 leading-relaxed">
+                    <div class="bg-ttn-ice/40 p-3 rounded-ttn-card border-l-4 border-ttn-orange">
+                        <h2 class="font-heading font-bold text-sm sm:text-base text-ttn-navy mb-0.5">When MDE Behaviours Escalate</h2>
+                        <p class="text-xs text-slate-700 leading-relaxed">
                             MDE behaviours tend to intensify when they meet resistance. What begins as a firm request can become a demand. A demand can become a threat.
                         </p>
                     </div>
 
                     <!-- Step-by-Step Escalation Sequence -->
-                    <div class="space-y-4 my-6">
+                    <div class="space-y-2.5 my-3">
                         
                         <!-- Step 1 -->
-                        <div class="ttn-card p-4 md:p-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-                            <div class="flex items-center gap-4">
-                                <div class="w-10 h-10 rounded-full bg-ttn-blue text-white font-heading font-bold flex items-center justify-center text-lg shrink-0">1</div>
+                        <div class="ttn-card p-3 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-7 h-7 rounded-full bg-ttn-blue text-white font-heading font-bold flex items-center justify-center text-xs shrink-0">1</div>
                                 <div>
-                                    <span class="text-xs font-bold text-ttn-blue uppercase tracking-wider">Starting Point</span>
-                                    <h3 class="font-heading font-bold text-ttn-navy">Firm Request → Entitlement</h3>
+                                    <span class="text-[10px] font-bold text-ttn-blue uppercase tracking-wider">Starting Point</span>
+                                    <h3 class="font-heading font-bold text-xs sm:text-sm text-ttn-navy">Firm Request → Entitlement</h3>
                                 </div>
                             </div>
-                            <div class="bg-slate-50 p-3 rounded border border-ttn-ice text-xs md:text-sm text-slate-700 italic max-w-md w-full">
+                            <div class="bg-slate-50 p-2 rounded border border-ttn-ice text-xs text-slate-700 italic max-w-md w-full">
                                 "I expect to be seen by my preferred doctor because of my longstanding history here."
                             </div>
                         </div>
 
                         <!-- Step 2 -->
-                        <div class="ttn-card p-4 md:p-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-                            <div class="flex items-center gap-4">
-                                <div class="w-10 h-10 rounded-full bg-ttn-orange text-white font-heading font-bold flex items-center justify-center text-lg shrink-0">2</div>
+                        <div class="ttn-card p-3 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-7 h-7 rounded-full bg-ttn-orange text-white font-heading font-bold flex items-center justify-center text-xs shrink-0">2</div>
                                 <div>
-                                    <span class="text-xs font-bold text-ttn-orange uppercase tracking-wider">Secondary Escalation</span>
-                                    <h3 class="font-heading font-bold text-ttn-navy">Demand → Pressure Tactics</h3>
+                                    <span class="text-[10px] font-bold text-ttn-orange uppercase tracking-wider">Secondary Escalation</span>
+                                    <h3 class="font-heading font-bold text-xs sm:text-sm text-ttn-navy">Demand → Pressure Tactics</h3>
                                 </div>
                             </div>
-                            <div class="bg-slate-50 p-3 rounded border border-ttn-ice text-xs md:text-sm text-slate-700 italic max-w-md w-full">
+                            <div class="bg-slate-50 p-2 rounded border border-ttn-ice text-xs text-slate-700 italic max-w-md w-full">
                                 "I don't care if the clinic is full. I am not leaving until I am given an appointment today."
                             </div>
                         </div>
 
                         <!-- Step 3 -->
-                        <div class="ttn-card p-4 md:p-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-                            <div class="flex items-center gap-4">
-                                <div class="w-10 h-10 rounded-full bg-ttn-navy text-ttn-cyan font-heading font-bold flex items-center justify-center text-lg shrink-0">3</div>
+                        <div class="ttn-card p-3 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-7 h-7 rounded-full bg-ttn-navy text-ttn-cyan font-heading font-bold flex items-center justify-center text-xs shrink-0">3</div>
                                 <div>
-                                    <span class="text-xs font-bold text-purple-600 uppercase tracking-wider">Final Pivot</span>
-                                    <h3 class="font-heading font-bold text-ttn-navy">Threat → Coercive Manipulation</h3>
+                                    <span class="text-[10px] font-bold text-purple-600 uppercase tracking-wider">Final Pivot</span>
+                                    <h3 class="font-heading font-bold text-xs sm:text-sm text-ttn-navy">Threat → Coercive Manipulation</h3>
                                 </div>
                             </div>
-                            <div class="bg-slate-50 p-3 rounded border border-ttn-ice text-xs md:text-sm text-slate-700 italic max-w-md w-full">
+                            <div class="bg-slate-50 p-2 rounded border border-ttn-ice text-xs text-slate-700 italic max-w-md w-full">
                                 "I will report you personally to management and take this to the local committee."
                             </div>
                         </div>
 
                     </div>
 
-                    <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-ttn-card">
-                        <p class="text-xs md:text-sm text-slate-800 font-medium">
+                    <div class="bg-emerald-50 border border-emerald-200 p-3 rounded-ttn-card">
+                        <p class="text-xs text-slate-800 font-medium">
                             <strong>The Mindset Shift:</strong> Once you recognise the pattern, you are no longer caught off guard by it. You can stay calm, neutral, and consistent in your response.
                         </p>
                     </div>
@@ -317,23 +317,23 @@
                 </div>
 
                 <!-- SLIDE 3: WHAT MDE IS NOT -->
-                <div class="carousel-slide p-6 md:p-8 space-y-6">
+                <div class="carousel-slide p-4 md:p-5 space-y-3 md:space-y-4">
                     
                     <div>
-                        <h2 class="font-heading font-bold text-xl text-ttn-navy mb-2">Differentiating MDE from Genuine Distress</h2>
-                        <p class="text-sm text-slate-600">
+                        <h2 class="font-heading font-bold text-base text-ttn-navy mb-0.5">Differentiating MDE from Genuine Distress</h2>
+                        <p class="text-xs text-slate-600">
                             Not every frustrated or difficult patient is displaying MDE behaviour.
                         </p>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                         
                         <!-- Card 1: Frustration & Distress -->
-                        <div class="bg-emerald-50/60 border border-emerald-200 rounded-ttn-card p-6">
-                            <div class="text-ttn-success font-heading font-bold text-lg mb-3">
+                        <div class="bg-emerald-50/60 border border-emerald-200 rounded-ttn-card p-4">
+                            <div class="text-ttn-success font-heading font-bold text-sm mb-2">
                                 <h3>Situational Distress / Frustration</h3>
                             </div>
-                            <ul class="space-y-3 text-xs md:text-sm text-slate-700">
+                            <ul class="space-y-2 text-xs text-slate-700">
                                 <li class="flex items-start gap-2">
                                     <span class="text-ttn-success font-bold">•</span>
                                     <span>A patient who is short-tempered after a long wait in reception.</span>
@@ -350,11 +350,11 @@
                         </div>
 
                         <!-- Card 2: Persistent MDE -->
-                        <div class="bg-amber-50/60 border border-amber-200 rounded-ttn-card p-6">
-                            <div class="text-amber-700 font-heading font-bold text-lg mb-3">
+                        <div class="bg-amber-50/60 border border-amber-200 rounded-ttn-card p-4">
+                            <div class="text-amber-700 font-heading font-bold text-sm mb-2">
                                 <h3>Persistent MDE Behaviour</h3>
                             </div>
-                            <ul class="space-y-3 text-xs md:text-sm text-slate-700">
+                            <ul class="space-y-2 text-xs text-slate-700">
                                 <li class="flex items-start gap-2">
                                     <span class="text-amber-600 font-bold">•</span>
                                     <span>Describes <strong>specific, persistent patterns</strong> of behaviour.</span>
@@ -372,8 +372,8 @@
 
                     </div>
 
-                    <div class="bg-ttn-ice/60 border-l-4 border-ttn-trust-blue p-4 rounded-r-ttn-sm">
-                        <p class="text-xs md:text-sm text-ttn-navy font-semibold">
+                    <div class="bg-ttn-ice/60 border-l-4 border-ttn-trust-blue p-3 rounded-r-ttn-sm">
+                        <p class="text-xs text-ttn-navy font-semibold">
                             <strong>Why it matters:</strong> The distinction matters because the response is different. Distress requires empathy and clarity; MDE requires firm, calm boundaries and consistent policy enforcement.
                         </p>
                     </div>
@@ -381,56 +381,56 @@
                 </div>
 
                 <!-- SLIDE 4: A WORKED EXAMPLE -->
-                <div class="carousel-slide p-6 md:p-8 space-y-6">
+                <div class="carousel-slide p-4 md:p-5 space-y-3 md:space-y-4">
                     
                     <div>
-                        <h2 class="font-heading font-bold text-xl text-ttn-navy mb-1">Worked Example: Mrs Patel Scenario</h2>
-                        <p class="text-sm text-slate-600">
+                        <h2 class="font-heading font-bold text-base text-ttn-navy mb-0.5">Worked Example: Mrs Patel Scenario</h2>
+                        <p class="text-xs text-slate-600">
                             Mrs Patel arrives at the desk without an appointment. She is well-dressed, confident and speaks with authority.
                         </p>
                     </div>
 
                     <!-- Timeline Dialogue Cards -->
-                    <div class="space-y-4">
+                    <div class="space-y-2.5">
                         
                         <!-- Dialogue 1 -->
-                        <div class="ttn-card p-4 md:p-5 border-l-4 border-amber-400">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="text-xs font-bold text-amber-700 bg-amber-50 px-2.5 py-0.5 rounded uppercase">1. Entitlement First</span>
-                                <span class="text-xs text-slate-400 font-mono">00:00 - Arrival</span>
+                        <div class="ttn-card p-3 border-l-4 border-amber-400">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-[10px] font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded uppercase">1. Entitlement First</span>
+                                <span class="text-[10px] text-slate-400 font-mono">00:00 - Arrival</span>
                             </div>
-                            <blockquote class="text-sm md:text-base font-semibold text-slate-800 italic mb-2">
+                            <blockquote class="text-xs sm:text-sm font-semibold text-slate-800 italic mb-1">
                                 "I need to see Dr Andrews today. I have been a patient here for fifteen years and I always see him."
                             </blockquote>
-                            <div class="text-xs text-slate-500 bg-slate-50 p-2 rounded">
+                            <div class="text-[11px] text-slate-500 bg-slate-50 p-1.5 rounded">
                                 <strong>Clinic Action:</strong> Reception polite and firm: explains Dr Andrews is fully booked for today.
                             </div>
                         </div>
 
                         <!-- Dialogue 2 -->
-                        <div class="ttn-card p-4 md:p-5 border-l-4 border-ttn-orange">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="text-xs font-bold text-ttn-orange bg-orange-50 px-2.5 py-0.5 rounded uppercase">2. Demanding Behaviour Second</span>
-                                <span class="text-xs text-slate-400 font-mono">00:45 - Tone Shift</span>
+                        <div class="ttn-card p-3 border-l-4 border-ttn-orange">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-[10px] font-bold text-ttn-orange bg-orange-50 px-2 py-0.5 rounded uppercase">2. Demanding Behaviour Second</span>
+                                <span class="text-[10px] text-slate-400 font-mono">00:45 - Tone Shift</span>
                             </div>
-                            <blockquote class="text-sm md:text-base font-semibold text-slate-800 italic mb-2">
+                            <blockquote class="text-xs sm:text-sm font-semibold text-slate-800 italic mb-1">
                                 "This is completely unacceptable. I need to be seen today. I do not care about your system."
                             </blockquote>
-                            <div class="text-xs text-slate-500 bg-slate-50 p-2 rounded">
+                            <div class="text-[11px] text-slate-500 bg-slate-50 p-1.5 rounded">
                                 <strong>Clinic Action:</strong> Reception holds boundary: offers an alternative appointment with a different GP.
                             </div>
                         </div>
 
                         <!-- Dialogue 3 -->
-                        <div class="ttn-card p-4 md:p-5 border-l-4 border-purple-500">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="text-xs font-bold text-purple-700 bg-purple-50 px-2.5 py-0.5 rounded uppercase">3. Manipulation Third</span>
-                                <span class="text-xs text-slate-400 font-mono">01:30 - Final Pivot</span>
+                        <div class="ttn-card p-3 border-l-4 border-purple-500">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-[10px] font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded uppercase">3. Manipulation Third</span>
+                                <span class="text-[10px] text-slate-400 font-mono">01:30 - Final Pivot</span>
                             </div>
-                            <blockquote class="text-sm md:text-base font-semibold text-slate-800 italic mb-2">
+                            <blockquote class="text-xs sm:text-sm font-semibold text-slate-800 italic mb-1">
                                 "I think you should know that my husband is on the Patient Participation Group. I would hate for this to become something more formal."
                             </blockquote>
-                            <div class="text-xs text-slate-500 bg-slate-50 p-2 rounded">
+                            <div class="text-[11px] text-slate-500 bg-slate-50 p-1.5 rounded">
                                 <strong>Clinic Action:</strong> Mrs Patel leans forward, attempting to induce fear of formal reprimand.
                             </div>
                         </div>
@@ -438,15 +438,12 @@
                     </div>
 
                     <!-- Scenario Summary Box -->
-                    <div class="bg-ttn-navy text-white p-6 rounded-ttn-card shadow-ttn-main text-center space-y-3">
-                        <span class="inline-block bg-ttn-cyan text-ttn-navy font-heading font-extrabold text-xs px-3 py-1 rounded-full uppercase">
+                    <div class="bg-ttn-navy text-white p-3.5 rounded-ttn-card shadow-ttn-main text-center space-y-1">
+                        <span class="inline-block bg-ttn-cyan text-ttn-navy font-heading font-extrabold text-[10px] px-2.5 py-0.5 rounded-full uppercase">
                             Scenario Breakdown
                         </span>
-                        <p class="text-base md:text-lg font-medium text-slate-100 max-w-2xl mx-auto">
+                        <p class="text-xs sm:text-sm font-medium text-slate-100 max-w-xl mx-auto">
                             Within two minutes, all three MDE behaviours have appeared. <strong class="text-ttn-cyan">Entitlement first. Demanding behaviour second. Manipulation third.</strong>
-                        </p>
-                        <p class="text-xs text-slate-300 italic">
-                            Each one triggered by the failure of the last.
                         </p>
                     </div>
 
@@ -456,30 +453,30 @@
         </div>
 
         <!-- Carousel Control Bar -->
-        <div class="bg-slate-50 border-t border-ttn-ice px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div class="bg-slate-50 border-t border-ttn-ice px-4 py-2.5 flex flex-row justify-between items-center gap-3">
             
-            <button id="prev-btn" onclick="prevSlide()" class="ttn-cta-ghost px-5 py-2.5 text-xs uppercase tracking-wider w-full sm:w-auto">
+            <button id="prev-btn" onclick="prevSlide()" class="ttn-cta-ghost px-4 py-2 text-xs uppercase tracking-wider">
                 ← Previous
             </button>
 
             <!-- Pagination Dots -->
-            <div class="flex items-center gap-2">
-                <button onclick="goToSlide(0)" class="dot-btn w-3 h-3 rounded-full bg-ttn-blue transition-all" aria-label="Go to slide 1"></button>
-                <button onclick="goToSlide(1)" class="dot-btn w-3 h-3 rounded-full bg-slate-300 transition-all" aria-label="Go to slide 2"></button>
-                <button onclick="goToSlide(2)" class="dot-btn w-3 h-3 rounded-full bg-slate-300 transition-all" aria-label="Go to slide 3"></button>
-                <button onclick="goToSlide(3)" class="dot-btn w-3 h-3 rounded-full bg-slate-300 transition-all" aria-label="Go to slide 4"></button>
+            <div class="flex items-center gap-1.5">
+                <button onclick="goToSlide(0)" class="dot-btn w-2.5 h-2.5 rounded-full bg-ttn-blue transition-all" aria-label="Go to slide 1"></button>
+                <button onclick="goToSlide(1)" class="dot-btn w-2.5 h-2.5 rounded-full bg-slate-300 transition-all" aria-label="Go to slide 2"></button>
+                <button onclick="goToSlide(2)" class="dot-btn w-2.5 h-2.5 rounded-full bg-slate-300 transition-all" aria-label="Go to slide 3"></button>
+                <button onclick="goToSlide(3)" class="dot-btn w-2.5 h-2.5 rounded-full bg-slate-300 transition-all" aria-label="Go to slide 4"></button>
             </div>
 
-            <button id="next-btn" onclick="nextSlide()" class="ttn-cta-secondary px-6 py-2.5 text-xs uppercase tracking-wider w-full sm:w-auto">
+            <button id="next-btn" onclick="nextSlide()" class="ttn-cta-secondary px-5 py-2 text-xs uppercase tracking-wider">
                 Next Step →
             </button>
 
         </div>
 
         <!-- Footer Info Bar -->
-        <div class="bg-ttn-navy border-t border-white/10 px-6 py-3 text-white text-xs flex flex-col sm:flex-row justify-between items-center gap-2">
-            <span class="font-medium">TTN Digital • Conflict Resolution Training Series</span>
-            <span id="slide-counter" class="text-slate-300 font-mono">Step 1 of 4</span>
+        <div class="bg-ttn-navy border-t border-white/10 px-4 py-2 text-white text-[11px] flex flex-row justify-between items-center">
+            <span class="font-medium truncate">TTN Digital • Conflict Resolution Training</span>
+            <span id="slide-counter" class="text-slate-300 font-mono shrink-0 ml-2">Step 1 of 4</span>
         </div>
 
     </div>
